@@ -36,7 +36,7 @@ jobs:
       - name: Install Dependencies
         run: bun install
       - name: Compile
-        run: bunx vite build
+        run: bunx vite build --base="/website/"
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
