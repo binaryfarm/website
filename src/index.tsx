@@ -59,7 +59,9 @@ const router = createBrowserRouter([
 		element: <Login />,
 		errorElement: <ErrorPage />
 	}
-]);
+], {
+  basename: "/website",
+});
 
 ReactDOM.createRoot(document.getElementById('app')!).render(
 	<React.StrictMode>
